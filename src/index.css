@@ -2,6 +2,28 @@
 @import "tailwindcss";
 
 @theme {
+  /* Fonts */
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-accent: "Instrument Serif", serif;
+
+  /* Base Colors (Light Mode) */
+
+  --color-neutral-0: #000000; /* Deep Black */
+  --color-neutral-100: #262626; /* Dark Charcoal */
+  --color-neutral-300: #5e5e5e; /* Medium Gray */
+  --color-neutral-500: #b0b0b0; /* Silver / Muted */
+  --color-neutral-700: #e8e8e8; /* BG */
+  --color-neutral-800: #f0f0f0; /* Off-White / Soft Surface */
+  --color-neutral-1000: #ffffff; /* Pure White */
 }
+
+/* Base Colors (Dark Mode) */
+
+/* @variant dark {
+  :root {
+    --color-bg-main: #121212;
+    --color-bg-muted: #1e1e1e;
+    --color-fg-soft: #a1a1a1;
+    --color-fg-strong: #e8e8e8;
+  }
+} */
