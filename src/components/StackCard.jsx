@@ -1,14 +1,17 @@
 export default function StackCard({ item }) {
-  const Icon = item.icon;
+  const coloredSvg = item.icon.svg.replace(
+    "<svg",
+    `<svg fill="#${item.icon.hex}"`,
+  );
 
   return (
     <div
       className="
         group/card
         flex
-        min-w-23
-        sm:min-w-26.25
-        md:min-w-30
+        min-w-[88px]
+        sm:min-w-[96px]
+        md:min-w-[110px]
         flex-col
         items-center
         justify-center
@@ -17,9 +20,9 @@ export default function StackCard({ item }) {
         border-neutral-1000/80
         bg-neutral-800
         px-3
-        py-4
+        py-3
         sm:px-4
-        sm:py-5
+        sm:py-4
         transition-all
         cursor-pointer
         duration-300
@@ -29,34 +32,31 @@ export default function StackCard({ item }) {
       <div
         className="
           flex
-          h-10
-          w-10
-          sm:h-12
-          sm:w-12
-          md:h-14
-          md:w-14
+          h-7
+          w-7
+          sm:h-8
+          sm:w-8
+          md:h-10
+          md:w-10
           items-center
           justify-center
-          rounded-xl
           transition-transform
           duration-300
-          group-hover
+          group-hover/card:scale-110
+          [&_svg]:h-full
+          [&_svg]:w-full
         "
-      >
-        <Icon
-          className={`text-xl sm:text-2xl md:text-3xl ${
-            item?.color || "text-neutral-0"
-          }`}
-        />
-      </div>
+        dangerouslySetInnerHTML={{
+          __html: coloredSvg,
+        }}
+      />
 
       <p
         className="
           mt-2
-          md:mt-3
-          text-[11px]
-          sm:text-xs
-          md:text-sm
+          text-[10px]
+          sm:text-[11px]
+          md:text-xs
           font-medium
           text-neutral-300
           whitespace-nowrap

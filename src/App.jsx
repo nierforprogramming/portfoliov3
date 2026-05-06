@@ -11,9 +11,9 @@ const App = () => {
       <Header />
       <Hero />
       <AboutMe />
+      <Experience />
       <Services />
       <Stack />
-      <Experience />
     </section>
   );
 };
