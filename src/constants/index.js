@@ -1,3 +1,8 @@
+import {
+  RiInstagramLine,
+  RiLinkedinLine,
+  RiTwitterXLine,
+} from "react-icons/ri";
 import { SiBun } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
@@ -49,6 +54,31 @@ import {
   siVitest,
   siNetlify,
 } from "simple-icons";
+
+export const links = [
+  {
+    label: "Home",
+    path: "#home",
+  },
+  {
+    label: "About",
+    path: "#about",
+  },
+
+  {
+    label: "Experience",
+    path: "#experience",
+  },
+  {
+    label: "Services",
+    path: "#services",
+  },
+
+  {
+    label: "Contact",
+    path: "#contact",
+  },
+];
 
 export const services = [
   {
@@ -475,5 +505,25 @@ export const experience = [
     duration: "2019 - 2023",
     detail:
       "Completed a Bachelor in Computer Application degree with a strong focus on web development, frontend technologies, and practical software development skills.",
+  },
+];
+
+export const socials = [
+  {
+    name: "X",
+    url: "https://www.x.com",
+    icon: RiTwitterXLine,
+  },
+
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com",
+    icon: RiInstagramLine,
+  },
+
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com",
+    icon: RiLinkedinLine,
   },
 ];

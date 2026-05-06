@@ -1,5 +1,7 @@
 import AboutMe from "./components/AboutMe";
+import Credits from "./components/Credits";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -14,6 +16,8 @@ const App = () => {
       <Experience />
       <Services />
       <Stack />
+      <Footer />
+      <Credits />
     </section>
   );
 };
