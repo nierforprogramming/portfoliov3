@@ -1,3 +1,8 @@
+import recipiaImage from "../assets/recipia.png";
+import mindwaveImage from "../assets/mindwave.png";
+import newsImage from "../assets/news.png";
+import sushimanImage from "../assets/sushiman.png";
+
 import {
   RiInstagramLine,
   RiLinkedinLine,
@@ -61,8 +66,8 @@ export const links = [
     path: "#home",
   },
   {
-    label: "About",
-    path: "#about",
+    label: "Work",
+    path: "#work",
   },
 
   {
@@ -77,6 +82,37 @@ export const links = [
   {
     label: "Contact",
     path: "#contact",
+  },
+];
+
+export const works = [
+  {
+    name: "Recipia",
+    category: "API Driven",
+    year: "2025",
+    url: "https://recipiafromtheweb.netlify.app/",
+    image: recipiaImage,
+  },
+  {
+    name: "Mindwave",
+    category: "Landing page",
+    year: "2025",
+    url: "https://mindwavebyniraj.netlify.app/",
+    image: mindwaveImage,
+  },
+  {
+    name: "NFN News",
+    category: "API Driven",
+    year: "2025",
+    url: "https://nfnnews.netlify.app/",
+    image: newsImage,
+  },
+  {
+    name: "Sushiman",
+    category: "Landing page",
+    year: "2024",
+    url: "https://nrjstarsushi.netlify.app/",
+    image: sushimanImage,
   },
 ];
 
@@ -489,7 +525,7 @@ export const experience = [
     role: "Front-End Developer",
     duration: "2025 - Present",
     detail:
-      "Contributing to the frontend development of restaurant and property management SaaS platforms using React, TypeScript, and Next.js.",
+      "Contributed to the frontend development of restaurant and property management SaaS platforms using React, TypeScript, and Next.js.",
   },
   {
     company: "Broadway Infosys",
