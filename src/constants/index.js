@@ -1,4 +1,5 @@
 import { SiBun } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import {
   siJavascript,
@@ -41,6 +42,12 @@ import {
   siThreedotjs,
   siRedux,
   siPhp,
+  siContentful,
+  siReactquery,
+  siZod,
+  siVercel,
+  siVitest,
+  siNetlify,
 } from "simple-icons";
 
 export const services = [
@@ -147,7 +154,7 @@ export const stackItems = [
     url: "https://astro.build",
   },
   {
-    name: "TankStack",
+    name: "TanStack",
     type: "simple-icons",
     icon: siTanstack,
     url: "https://tanstack.com",
@@ -165,6 +172,14 @@ export const stackItems = [
     type: "simple-icons",
     icon: siRedux,
     url: "https://redux-toolkit.js.org/",
+  },
+
+  // Validation
+  {
+    name: "Zod",
+    type: "simple-icons",
+    icon: siZod,
+    url: "https://zod.dev",
   },
 
   // UI libraries
@@ -211,6 +226,14 @@ export const stackItems = [
     type: "simple-icons",
     icon: siGsap,
     url: "https://gsap.com",
+  },
+
+  {
+    name: "Motion",
+    type: "react-icons",
+    icon: TbBrandFramerMotion,
+    color: "#FFBF00",
+    url: "https://motion.dev/",
   },
 
   // Mobile development
@@ -330,6 +353,22 @@ export const stackItems = [
     url: "https://firebase.google.com",
   },
 
+  // API / Data fetching
+  {
+    name: "React Query",
+    type: "simple-icons",
+    icon: siReactquery,
+    url: "https://tanstack.com/query/latest",
+  },
+
+  // Headless CMS
+  {
+    name: "Contentful",
+    type: "simple-icons",
+    icon: siContentful,
+    url: "https://www.contentful.com/",
+  },
+
   // ORM
   {
     name: "Prisma",
@@ -388,6 +427,29 @@ export const stackItems = [
     type: "simple-icons",
     icon: siGit,
     url: "https://git-scm.com",
+  },
+
+  // Testing
+  {
+    name: "Vitest",
+    type: "simple-icons",
+    icon: siVitest,
+    url: "https://vitest.dev",
+  },
+
+  // Deployment
+  {
+    name: "Vercel",
+    type: "simple-icons",
+    icon: siVercel,
+    url: "https://vercel.com",
+  },
+
+  {
+    name: "Netlify",
+    type: "simple-icons",
+    icon: siNetlify,
+    url: "https://www.netlify.com/",
   },
 ];
 
