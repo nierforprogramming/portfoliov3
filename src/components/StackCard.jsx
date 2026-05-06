@@ -1,8 +1,11 @@
 export default function StackCard({ item }) {
-  const coloredSvg = item.icon.svg.replace(
-    "<svg",
-    `<svg fill="#${item.icon.hex}"`,
-  );
+  const isSimpleIcon = item.type === "simple-icons";
+
+  const ReactIcon = item.icon;
+
+  const coloredSvg = isSimpleIcon
+    ? item.icon.svg.replace("<svg", `<svg fill="#${item.icon.hex}"`)
+    : null;
 
   return (
     <a
@@ -10,28 +13,29 @@ export default function StackCard({ item }) {
       target="_blank"
       rel="noopener noreferrer"
       className="
-    group/card
-    flex
-    min-w-[88px]
-    sm:min-w-[96px]
-    md:min-w-[110px]
-    flex-col
-    items-center
-    justify-center
-    rounded-2xl
-    border
-    border-neutral-1000/80
-    bg-neutral-800
-    px-3
-    py-3
-    sm:px-4
-    sm:py-4
-    transition-all
-    cursor-pointer
-    duration-300
-    hover:scale-105
-  "
+        group/card
+        flex
+        min-w-22
+        sm:min-w-24
+        md:min-w-27.5
+        flex-col
+        items-center
+        justify-center
+        rounded-2xl
+        border
+        border-neutral-1000/80
+        bg-neutral-800
+        px-3
+        py-3
+        sm:px-4
+        sm:py-4
+        transition-all
+        cursor-pointer
+        duration-300
+        hover:scale-105
+      "
     >
+      {/* ICON */}
       <div
         className="
           flex
@@ -49,11 +53,24 @@ export default function StackCard({ item }) {
           [&_svg]:h-full
           [&_svg]:w-full
         "
-        dangerouslySetInnerHTML={{
-          __html: coloredSvg,
-        }}
-      />
+      >
+        {isSimpleIcon ? (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: coloredSvg,
+            }}
+          />
+        ) : (
+          <ReactIcon
+            style={{
+              color: item.color,
+            }}
+            className="h-full w-full"
+          />
+        )}
+      </div>
 
+      {/* TEXT */}
       <p
         className="
           mt-2
