@@ -2,6 +2,14 @@ import recipiaImage from "../assets/recipia.png";
 import mindwaveImage from "../assets/mindwave.png";
 import newsImage from "../assets/news.png";
 import sushimanImage from "../assets/sushiman.png";
+import watchlineupImage from "../assets/watchlineup.png";
+import tripImage from "../assets/trip.png";
+import webNotesImage from "../assets/webnotes.png";
+import nfnShopImage from "../assets/nfnshop.png";
+import nfBlogImage from "../assets/nfblog.png";
+import picolleryImage from "../assets/picollery.png";
+import soSunnyImage from "../assets/sosunny.png";
+import fixBugsImage from "../assets/fixbugs.png";
 
 import {
   RiInstagramLine,
@@ -95,7 +103,7 @@ export const works = [
   },
   {
     name: "Mindwave",
-    category: "Landing page",
+    category: "Landing Page",
     year: "2025",
     url: "https://mindwavebyniraj.netlify.app/",
     image: mindwaveImage,
@@ -107,12 +115,72 @@ export const works = [
     url: "https://nfnnews.netlify.app/",
     image: newsImage,
   },
+
+  {
+    name: "Watchlineup",
+    category: "Tracking App",
+    year: "2025",
+    url: "https://watchlineup.vercel.app/",
+    image: watchlineupImage,
+  },
+  {
+    name: "Picollery",
+    category: "API Driven",
+    year: "2025",
+    url: "https://picollery.netlify.app/",
+    image: picolleryImage,
+  },
+
+  {
+    name: "NFN Shop",
+    category: "Full Stack App",
+    year: "2025",
+    url: "https://niersfeedblog.vercel.app/",
+    image: nfBlogImage,
+  },
+
+  {
+    name: "NFBlog",
+    category: "Full Stack App",
+    year: "2025",
+    url: "https://nierfreshshop.vercel.app/",
+    image: nfnShopImage,
+  },
+  {
+    name: "Web Notes",
+    category: "Note Taking App",
+    year: "2025",
+    url: "https://nierswebnotes.onrender.com/",
+    image: webNotesImage,
+  },
+  {
+    name: "Fix Bugs",
+    category: "Bug Tracker",
+    year: "2025",
+    url: "https://nierfixbugs.vercel.app/",
+    image: fixBugsImage,
+  },
+
   {
     name: "Sushiman",
-    category: "Landing page",
+    category: "Landing Page",
     year: "2024",
     url: "https://nrjstarsushi.netlify.app/",
     image: sushimanImage,
+  },
+  {
+    name: "So Sunny",
+    category: "Weather App",
+    year: "2023",
+    url: "https://sosunnyv2.vercel.app/",
+    image: soSunnyImage,
+  },
+  {
+    name: "Trip",
+    category: "Landing Page",
+    year: "2023",
+    url: "https://nrjstartrip.netlify.app/",
+    image: tripImage,
   },
 ];
 
