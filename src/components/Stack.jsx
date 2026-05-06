@@ -1,11 +1,28 @@
+import MarqueeRow from "./MarqueeRow";
 import SectionHeading from "./SectionHeading";
 
-const Stack = () => {
+export default function Stack() {
   return (
-    <section>
+    <section className="relative overflow-hidden bg-neutral-700 py-14 md:py-20 space-y-4">
       <SectionHeading title="My Stack" />
+      {/* DOT BACKGROUND */}
+      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(var(--color-neutral-500)_1px,transparent_1px)] bg-size-[32px_32px]" />
+
+      {/* MASKED CONTENT */}
+      <div
+        className="
+          relative
+          z-20
+          space-y-4
+          py-2
+         mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
+          [-webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
+        "
+      >
+        <MarqueeRow direction="left" duration={35} />
+        <MarqueeRow direction="right" duration={40} />
+        <MarqueeRow direction="left" duration={32} />
+      </div>
     </section>
   );
-};
-
-export default Stack;
+}

@@ -17,7 +17,7 @@ export default function ServiceCard({ service }) {
       }}
       className="relative overflow-hidden cursor-pointer rounded-3xl border-2 border-neutral-1000 bg-neutral-800 p-6"
     >
-      {/* TOP */}
+      {/* card */}
       <div className="flex items-start justify-between gap-4">
         <div className="max-w-2xl">
           <h2 className="text-[16px] lg:text-[20px] xl:text-[24px] font-medium tracking-tight text-neutral-0">
@@ -53,16 +53,13 @@ export default function ServiceCard({ service }) {
         {isOpen && (
           <motion.div
             key="content"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
             transition={{
               height: {
                 duration: 0.45,
                 ease: [0.22, 1, 0.36, 1],
-              },
-              opacity: {
-                duration: 0.25,
               },
             }}
             className="overflow-hidden"

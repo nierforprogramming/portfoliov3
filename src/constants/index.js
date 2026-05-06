@@ -1,3 +1,24 @@
+import {
+  RiGithubLine,
+  RiJavascriptLine,
+  RiNextjsLine,
+  RiNodejsLine,
+  RiReactjsLine,
+  RiTailwindCssLine,
+} from "react-icons/ri";
+import {
+  SiCloudflare,
+  SiExpo,
+  SiExpress,
+  SiFigma,
+  SiGit,
+  SiMysql,
+  SiPostgresql,
+  SiPrisma,
+  SiSupabase,
+  SiTypescript,
+} from "react-icons/si";
+
 export const services = [
   {
     title: "Frontend Development",
@@ -55,4 +76,24 @@ export const services = [
       "App deployment assistance",
     ],
   },
+];
+
+export const stackItems = [
+  { name: "JavaScript", icon: RiJavascriptLine },
+  { name: "TypeScript", icon: SiTypescript },
+  { name: "React", icon: RiReactjsLine },
+  { name: "React Native", icon: RiReactjsLine },
+  { name: "Expo", icon: SiExpo },
+  { name: "Tailwind CSS", icon: RiTailwindCssLine },
+  { name: "Next.js", icon: RiNextjsLine },
+  { name: "Figma", icon: SiFigma },
+  { name: "Node.js", icon: RiNodejsLine },
+  { name: "Express", icon: SiExpress },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "MySQL", icon: SiMysql },
+  { name: "Supabase", icon: SiSupabase },
+  { name: "Prisma", icon: SiPrisma },
+  { name: "Cloudflare", icon: SiCloudflare },
+  { name: "GitHub", icon: RiGithubLine },
+  { name: "Git", icon: SiGit },
 ];
