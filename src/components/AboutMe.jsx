@@ -2,7 +2,7 @@ import SectionHeading from "./SectionHeading";
 
 const AboutMe = () => {
   return (
-    <section className="items-center min-h-screen space-y-8">
+    <section className="items-center space-y-8 py-20">
       <div>
         <SectionHeading title="About Me" />
       </div>
