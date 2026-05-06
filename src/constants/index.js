@@ -6,7 +6,7 @@ import {
   siNextdotjs,
   siAstro,
   siHtml5,
-  siCss3,
+  siCss,
   siTailwindcss,
   siBootstrap,
   siDaisyui,
@@ -97,62 +97,205 @@ export const services = [
 
 export const stackItems = [
   // Frameworks and languages
-  { name: "JavaScript", icon: siJavascript },
-  { name: "TypeScript", icon: siTypescript },
-  { name: "Python", icon: siPython },
-  { name: "React", icon: siReact },
-  { name: "Next.js", icon: siNextdotjs },
-  { name: "Astro.js", icon: siAstro },
+  {
+    name: "JavaScript",
+    icon: siJavascript,
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "TypeScript",
+    icon: siTypescript,
+    url: "https://www.typescriptlang.org",
+  },
+  {
+    name: "Python",
+    icon: siPython,
+    url: "https://www.python.org",
+  },
+  {
+    name: "React",
+    icon: siReact,
+    url: "https://react.dev",
+  },
+  {
+    name: "Next.js",
+    icon: siNextdotjs,
+    url: "https://nextjs.org",
+  },
+  {
+    name: "Astro.js",
+    icon: siAstro,
+    url: "https://astro.build",
+  },
 
   // UI libraries
-  { name: "HTML", icon: siHtml5 },
-  { name: "CSS", icon: siCss3 },
-  { name: "Tailwind CSS", icon: siTailwindcss },
-  { name: "Bootstrap", icon: siBootstrap },
-  { name: "DaisyUI", icon: siDaisyui },
-  { name: "ShadcnUI", icon: siShadcnui },
+  {
+    name: "HTML",
+    icon: siHtml5,
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    name: "CSS",
+    icon: siCss,
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: siTailwindcss,
+    url: "https://tailwindcss.com",
+  },
+  {
+    name: "Bootstrap",
+    icon: siBootstrap,
+    url: "https://getbootstrap.com",
+  },
+  {
+    name: "DaisyUI",
+    icon: siDaisyui,
+    url: "https://daisyui.com",
+  },
+  {
+    name: "ShadcnUI",
+    icon: siShadcnui,
+    url: "https://ui.shadcn.com",
+  },
 
   // Mobile development
-  { name: "React Native", icon: siReact },
-  { name: "Expo", icon: siExpo },
+  {
+    name: "React Native",
+    icon: siReact,
+    url: "https://reactnative.dev",
+  },
+  {
+    name: "Expo",
+    icon: siExpo,
+    url: "https://expo.dev",
+  },
 
   // Design tools
-  { name: "Figma", icon: siFigma },
+  {
+    name: "Figma",
+    icon: siFigma,
+    url: "https://figma.com",
+  },
 
   // Build tools
-  { name: "Vite", icon: siVite },
-  { name: "Bun", icon: siBun },
-  { name: "NPM", icon: siNpm },
-  { name: "Postman", icon: siPostman },
+  {
+    name: "Vite",
+    icon: siVite,
+    url: "https://vitejs.dev",
+  },
+  {
+    name: "Bun",
+    icon: siBun,
+    url: "https://bun.sh",
+  },
+  {
+    name: "NPM",
+    icon: siNpm,
+    url: "https://npmjs.com",
+  },
+  {
+    name: "Postman",
+    icon: siPostman,
+    url: "https://postman.com",
+  },
 
   // Backend
-  { name: "Node.js", icon: siNodedotjs },
-  { name: "Express", icon: siExpress },
-  { name: "Fast API", icon: siFastapi },
+  {
+    name: "Node.js",
+    icon: siNodedotjs,
+    url: "https://nodejs.org",
+  },
+  {
+    name: "Express",
+    icon: siExpress,
+    url: "https://expressjs.com",
+  },
+  {
+    name: "Fast API",
+    icon: siFastapi,
+    url: "https://fastapi.tiangolo.com",
+  },
 
   // Database
-  { name: "PostgreSQL", icon: siPostgresql },
-  { name: "MySQL", icon: siMysql },
-  { name: "MongoDB", icon: siMongodb },
-  { name: "Supabase", icon: siSupabase },
-  { name: "Firebase", icon: siFirebase },
+  {
+    name: "PostgreSQL",
+    icon: siPostgresql,
+    url: "https://postgresql.org",
+  },
+  {
+    name: "MySQL",
+    icon: siMysql,
+    url: "https://mysql.com",
+  },
+  {
+    name: "MongoDB",
+    icon: siMongodb,
+    url: "https://mongodb.com",
+  },
+  {
+    name: "Supabase",
+    icon: siSupabase,
+    url: "https://supabase.com",
+  },
+  {
+    name: "Firebase",
+    icon: siFirebase,
+    url: "https://firebase.google.com",
+  },
 
   // ORM
-  { name: "Prisma", icon: siPrisma },
-  { name: "Drizzle ORM", icon: siDrizzle },
-  { name: "Mongoose", icon: siMongoose },
+  {
+    name: "Prisma",
+    icon: siPrisma,
+    url: "https://prisma.io",
+  },
+  {
+    name: "Drizzle ORM",
+    icon: siDrizzle,
+    url: "https://orm.drizzle.team",
+  },
+  {
+    name: "Mongoose",
+    icon: siMongoose,
+    url: "https://mongoosejs.com",
+  },
 
   // Cloud / DevOps
-  { name: "Linux", icon: siLinux },
-  { name: "Cloudflare", icon: siCloudflare },
-  { name: "Docker", icon: siDocker },
-  { name: "Portainer", icon: siPortainer },
+  {
+    name: "Linux",
+    icon: siLinux,
+    url: "https://kernel.org",
+  },
+  {
+    name: "Cloudflare",
+    icon: siCloudflare,
+    url: "https://cloudflare.com",
+  },
+  {
+    name: "Docker",
+    icon: siDocker,
+    url: "https://docker.com",
+  },
+  {
+    name: "Portainer",
+    icon: siPortainer,
+    url: "https://portainer.io",
+  },
 
   // Version control
-  { name: "GitHub", icon: siGithub },
-  { name: "Git", icon: siGit },
+  {
+    name: "GitHub",
+    icon: siGithub,
+    url: "https://github.com",
+  },
+  {
+    name: "Git",
+    icon: siGit,
+    url: "https://git-scm.com",
+  },
 ];
-
 export const experience = [
   {
     company: "Depth Nepal Pvt. Ltd.",

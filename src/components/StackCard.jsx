@@ -5,29 +5,32 @@ export default function StackCard({ item }) {
   );
 
   return (
-    <div
+    <a
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
       className="
-        group/card
-        flex
-        min-w-[88px]
-        sm:min-w-[96px]
-        md:min-w-[110px]
-        flex-col
-        items-center
-        justify-center
-        rounded-2xl
-        border
-        border-neutral-1000/80
-        bg-neutral-800
-        px-3
-        py-3
-        sm:px-4
-        sm:py-4
-        transition-all
-        cursor-pointer
-        duration-300
-        hover:scale-105
-      "
+    group/card
+    flex
+    min-w-[88px]
+    sm:min-w-[96px]
+    md:min-w-[110px]
+    flex-col
+    items-center
+    justify-center
+    rounded-2xl
+    border
+    border-neutral-1000/80
+    bg-neutral-800
+    px-3
+    py-3
+    sm:px-4
+    sm:py-4
+    transition-all
+    cursor-pointer
+    duration-300
+    hover:scale-105
+  "
     >
       <div
         className="
@@ -64,6 +67,6 @@ export default function StackCard({ item }) {
       >
         {item.name}
       </p>
-    </div>
+    </a>
   );
 }
