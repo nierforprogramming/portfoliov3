@@ -19,9 +19,9 @@ export default function Stack() {
           [-webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
         "
       >
-        <MarqueeRow direction="left" duration={35} />
-        <MarqueeRow direction="right" duration={40} />
-        <MarqueeRow direction="left" duration={32} />
+        <MarqueeRow direction="left" duration={90} />
+        <MarqueeRow direction="right" duration={120} />
+        <MarqueeRow direction="left" duration={60} />
       </div>
     </section>
   );

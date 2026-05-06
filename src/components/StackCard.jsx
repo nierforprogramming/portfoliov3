@@ -43,7 +43,11 @@ export default function StackCard({ item }) {
           group-hover
         "
       >
-        <Icon className="text-xl sm:text-2xl md:text-3xl text-neutral-100" />
+        <Icon
+          className={`text-xl sm:text-2xl md:text-3xl ${
+            item?.color || "text-neutral-0"
+          }`}
+        />
       </div>
 
       <p
