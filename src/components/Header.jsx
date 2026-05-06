@@ -6,7 +6,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-3 py-4 md:px-8 xl:px-16 2xl:px-0">
         <div className="flex justify-between">
           <a
-            href="#"
+            href="#home"
             className="
           bg-neutral-800
           border-2

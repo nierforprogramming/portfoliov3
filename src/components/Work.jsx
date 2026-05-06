@@ -14,7 +14,7 @@ const Work = () => {
   };
 
   return (
-    <section className="min-h-screen space-y-8">
+    <section id="work" className="min-h-screen space-y-8">
       <SectionHeading title="Selected Work" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
         {visibleWorks.map((work, index) => (

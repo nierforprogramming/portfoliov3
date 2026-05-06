@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 
 const Experience = () => {
   return (
-    <section className="space-y-8 py-20">
+    <section id="experience" className="space-y-8 py-20">
       <SectionHeading title="Experience" />
 
       <h2 className="text-xl md:text-[24px] lg:text-[32px] font-medium">

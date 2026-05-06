@@ -11,11 +11,7 @@ import picolleryImage from "../assets/picollery.png";
 import soSunnyImage from "../assets/sosunny.png";
 import fixBugsImage from "../assets/fixbugs.png";
 
-import {
-  RiInstagramLine,
-  RiLinkedinLine,
-  RiTwitterXLine,
-} from "react-icons/ri";
+import { RiGithubLine, RiLinkedinLine, RiTwitterXLine } from "react-icons/ri";
 import { SiBun } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
@@ -620,14 +616,14 @@ export const socials = [
   },
 
   {
-    name: "Instagram",
-    url: "https://www.instagram.com",
-    icon: RiInstagramLine,
+    name: "GitHub",
+    url: "https://github.com/nierforprogramming",
+    icon: RiGithubLine,
   },
 
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/niraj-nepali-9407771bb",
     icon: RiLinkedinLine,
   },
 ];
