@@ -1,19 +1,26 @@
 import { services } from "../constants";
+import FadeUp from "./FadeUp";
 import SectionHeading from "./SectionHeading";
 import ServiceCard from "./ServiceCard";
+import TextReveal from "./TextReveal";
 
 export default function Services() {
   return (
     <section id="services" className="space-y-8 py-20">
-      <SectionHeading title="Services" />
+      <FadeUp>
+        <SectionHeading title="Services" />
+      </FadeUp>
 
-      <h2 className="text-xl md:text-[24px] lg:text-[32px] font-medium">
-        Frontend-focused development services tailored for modern startups, SaaS
-        platforms, and digital products.
-      </h2>
+      <TextReveal
+        text={` Frontend-focused development services tailored for modern startups, SaaS
+        platforms, and digital products.`}
+        className="text-xl md:text-[24px] lg:text-[32px] font-medium"
+      />
 
       {services.map((service, index) => (
-        <ServiceCard key={index} service={service} />
+        <FadeUp key={index} delay={index * 0.08}>
+          <ServiceCard service={service} />
+        </FadeUp>
       ))}
     </section>
   );

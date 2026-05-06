@@ -1,15 +1,20 @@
+import FadeUp from "./FadeUp";
 import MarqueeRow from "./MarqueeRow";
 import SectionHeading from "./SectionHeading";
+import TextReveal from "./TextReveal";
 
 export default function Stack() {
   return (
     <section className="relative overflow-hidden bg-neutral-700 py-14 md:py-20 space-y-8">
-      <SectionHeading title="My Stack" />
+      <FadeUp>
+        <SectionHeading title="My Stack" />
+      </FadeUp>
 
-      <h2 className="text-xl md:text-[24px] lg:text-[32px] font-medium">
-        The technologies powering my workflow — from frontend architecture and
-        animation systems to backend services and deployment.
-      </h2>
+      <TextReveal
+        text={`  The technologies powering my workflow — from frontend architecture and
+        animation systems to backend services and deployment.`}
+        className="text-xl md:text-[24px] lg:text-[32px] font-medium"
+      />
 
       {/* DOT BACKGROUND */}
       <div className="absolute inset-0 opacity-30 bg-[radial-gradient(var(--color-neutral-500)_1px,transparent_1px)] bg-size-[32px_32px]" />

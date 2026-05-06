@@ -2,9 +2,10 @@ import { useState } from "react";
 import { works } from "../constants";
 import SectionHeading from "./SectionHeading";
 import WorkCard from "./WorkCard";
+import FadeUp from "./FadeUp";
 
 const Work = () => {
-  const [displayCount, setDisplayCount] = useState(4);
+  const [displayCount, setDisplayCount] = useState(6);
 
   const visibleWorks = works.slice(0, displayCount);
   const hasMoreWorks = displayCount < works.length;
@@ -15,7 +16,9 @@ const Work = () => {
 
   return (
     <section id="work" className="min-h-screen space-y-8">
-      <SectionHeading title="Selected Work" />
+      <FadeUp>
+        <SectionHeading title="Selected Work" />
+      </FadeUp>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
         {visibleWorks.map((work, index) => (
           <WorkCard key={index} work={work} />
