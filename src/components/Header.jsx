@@ -34,7 +34,9 @@ const Header = () => {
             items-center
           "
             >
-              <button className="cursor-pointer">Download CV</button>
+              <a href="/resume.pdf" download className="cursor-pointer">
+                Download CV
+              </a>
 
               <span>
                 <PiReadCvLogo />
