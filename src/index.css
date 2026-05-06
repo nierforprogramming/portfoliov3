@@ -15,6 +15,12 @@
   --color-neutral-700: #e8e8e8; /* BG */
   --color-neutral-800: #f0f0f0; /* Off-White / Soft Surface */
   --color-neutral-1000: #ffffff; /* Pure White */
+
+  --background-image-dot-gradient: linear-gradient(
+    136deg,
+    var(--color-neutral-300) 0%,
+    var(--color-neutral-500) 100%
+  );
 }
 
 /* Base Colors (Dark Mode) */
