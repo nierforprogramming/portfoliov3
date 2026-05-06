@@ -154,3 +154,28 @@ export const stackItems = [
   { name: "GitHub", icon: RiGithubFill, color: "text-black" },
   { name: "Git", icon: SiGit, color: "text-[#F05032]" },
 ];
+
+export const experience = [
+  {
+    company: "Depth Nepal Pvt. Ltd.",
+    role: "Front-End Developer",
+    duration: "2025 - Present",
+    detail:
+      "Contributing to the frontend development of restaurant and property management SaaS platforms using React, TypeScript, and Next.js.",
+  },
+  {
+    company: "Broadway Infosys",
+    role: "Web Design Trainee",
+    duration: "2022 - 2023",
+    detail:
+      "Completed professional web design and frontend development training focused on responsive design, and modern web development skills.",
+  },
+
+  {
+    company: "Janjyoti Multiple Campus, Affiliated by Tribhuvan University",
+    role: "Bachelor in Computer Application",
+    duration: "2019 - 2023",
+    detail:
+      "Completed a Bachelor in Computer Application degree with a strong focus on web development, frontend technologies, and practical software development skills.",
+  },
+];
