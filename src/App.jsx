@@ -10,7 +10,7 @@ import Work from "./components/Work";
 
 const App = () => {
   return (
-    <section className="max-w-7xl mx-auto px-3 py-2 md:px-8 xl:px-16 2xl:px-0">
+    <section className="max-w-7xl mx-auto px-3 py-2 md:px-8 xl:px-16 2xl:px-0 relative">
       <Header />
       <Hero />
       <Work />
