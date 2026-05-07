@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 import { motion, AnimatePresence } from "motion/react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { PiReadCvLogo } from "react-icons/pi";
 
 import { links } from "../constants";
 import RollOver from "./RollOver";
+import { AiOutlineClose } from "react-icons/ai";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -138,18 +139,12 @@ const Header = () => {
                         scale: 0.7,
                       }}
                       transition={{
-                        duration: 0.2,
+                        duration: 0.25,
+                        ease: [0.22, 1, 0.36, 1],
                       }}
-                      className="
-                        absolute
-                        flex
-                        h-8
-                        w-8
-                        items-center
-                        justify-center
-                        rounded-full"
+                      className="absolute"
                     >
-                      <RiCloseLine className="text-base" />
+                      <AiOutlineClose className="text-[18px]" />
                     </motion.div>
                   ) : (
                     <motion.div
@@ -170,18 +165,12 @@ const Header = () => {
                         scale: 0.7,
                       }}
                       transition={{
-                        duration: 0.2,
+                        duration: 0.25,
+                        ease: [0.22, 1, 0.36, 1],
                       }}
-                      className="
-                        absolute
-                        flex
-                        h-8
-                        w-8
-                        items-center
-                        justify-center
-                        rounded-full"
+                      className="absolute"
                     >
-                      <RiMenu3Line className="text-base" />
+                      <HiOutlineMenuAlt4 className="text-[18px]" />
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -204,39 +193,55 @@ const Header = () => {
                 <AnimatePresence mode="wait">
                   {isOpen ? (
                     <motion.div
-                      key="close-mobile"
+                      key="close"
                       initial={{
                         rotate: -90,
                         opacity: 0,
+                        scale: 0.7,
                       }}
                       animate={{
                         rotate: 0,
                         opacity: 1,
+                        scale: 1,
                       }}
                       exit={{
                         rotate: 90,
                         opacity: 0,
+                        scale: 0.7,
                       }}
+                      transition={{
+                        duration: 0.25,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className="absolute"
                     >
-                      <RiCloseLine />
+                      <AiOutlineClose className="text-[18px]" />
                     </motion.div>
                   ) : (
                     <motion.div
-                      key="menu-mobile"
+                      key="menu"
                       initial={{
                         rotate: 90,
                         opacity: 0,
+                        scale: 0.7,
                       }}
                       animate={{
                         rotate: 0,
                         opacity: 1,
+                        scale: 1,
                       }}
                       exit={{
                         rotate: -90,
                         opacity: 0,
+                        scale: 0.7,
                       }}
+                      transition={{
+                        duration: 0.25,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                      className="absolute"
                     >
-                      <RiMenu3Line />
+                      <HiOutlineMenuAlt4 className="text-[18px]" />
                     </motion.div>
                   )}
                 </AnimatePresence>

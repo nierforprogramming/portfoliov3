@@ -15,7 +15,7 @@ export default function ServiceCard({ service }) {
           ease: [0.22, 1, 0.36, 1],
         },
       }}
-      className="relative overflow-hidden cursor-pointer rounded-3xl border-2 border-neutral-1000 bg-neutral-800 p-6"
+      className="relative hover:bg-neutral-700 transition-colors duration-300 overflow-hidden cursor-pointer rounded-3xl border-2 border-neutral-1000 bg-neutral-800 p-6"
     >
       {/* card */}
       <div className="flex items-start justify-between gap-4">
