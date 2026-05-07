@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <main
       id="home"
-      className="flex flex-col space-y-4 pt-16 pb-10 md:py-28 xl:py-34"
+      className="flex flex-col space-y-4 pt-30 pb-10 md:py-28 xl:py-34"
     >
       <section className="flex items-center gap-2">
         <div className="bg-green-400 w-3 h-3 rounded-full"></div>

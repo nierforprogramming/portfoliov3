@@ -1,6 +1,6 @@
 const Credits = () => {
   return (
-    <section className="my-4 space-y-2 flex justify-between">
+    <section className="my-4 space-y-2 md:flex md:justify-between">
       <div>
         <p className="text-neutral-300 tracking-wide text-sm">
           Built with <b className="text-neutral-0">React.js</b> for the modern
