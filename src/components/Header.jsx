@@ -1,4 +1,6 @@
 import { PiReadCvLogo } from "react-icons/pi";
+import { motion } from "motion/react";
+import HoverIconSwap from "./HoverIconSwap";
 
 const Header = () => {
   return (
@@ -21,7 +23,9 @@ const Header = () => {
           </a>
 
           <nav>
-            <div
+            <motion.div
+              initial="initial"
+              whileHover="hover"
               className="
             bg-neutral-0
             text-white
@@ -38,10 +42,8 @@ const Header = () => {
                 Download CV
               </a>
 
-              <span>
-                <PiReadCvLogo />
-              </span>
-            </div>
+              <HoverIconSwap icon={PiReadCvLogo} />
+            </motion.div>
           </nav>
         </div>
       </div>

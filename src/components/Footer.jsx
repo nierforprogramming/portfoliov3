@@ -1,5 +1,9 @@
+import { motion } from "motion/react";
+
 import { links, socials } from "../constants";
 import FadeUp from "./FadeUp";
+import { RiArrowRightLongLine } from "react-icons/ri";
+import HoverIconSwap from "./HoverIconSwap";
 
 const Footer = () => {
   return (
@@ -17,9 +21,14 @@ const Footer = () => {
             to chat about your ideas? I’d love to hear from you!
           </p>
 
-          <button className="rounded-full h-10 cursor-pointer bg-neutral-1000 px-6 py-2 text-sm font-medium text-neutral-0">
+          <motion.button
+            initial="initial"
+            whileHover="hover"
+            className="rounded-full flex gap-1 items-center h-10 cursor-pointer bg-neutral-1000 px-6 py-2 text-sm font-medium text-neutral-0"
+          >
             Reach Out
-          </button>
+            <HoverIconSwap icon={RiArrowRightLongLine} />
+          </motion.button>
         </div>
 
         <div className="flex flex-col lg:justify-end lg:items-end lg:text-right flex-1 space-y-4">
