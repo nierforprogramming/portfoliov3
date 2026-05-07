@@ -1,6 +1,8 @@
+import FadeUp from "./FadeUp";
+
 const Credits = () => {
   return (
-    <section className="my-4 space-y-2 md:flex md:justify-between">
+    <FadeUp className="my-4 space-y-2 md:flex md:justify-between">
       <div>
         <p className="text-neutral-300 tracking-wide text-sm">
           Built with <b className="text-neutral-0">React.js</b> for the modern
@@ -14,7 +16,7 @@ const Credits = () => {
           Reserved.
         </p>
       </div>
-    </section>
+    </FadeUp>
   );
 };
 

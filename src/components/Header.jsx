@@ -1,6 +1,8 @@
 import { PiReadCvLogo } from "react-icons/pi";
+
 import { motion } from "motion/react";
-import HoverIconSwap from "./HoverIconSwap";
+
+import RollOver from "./RollOver";
 
 const Header = () => {
   return (
@@ -41,8 +43,9 @@ const Header = () => {
               <a href="/resume.pdf" download className="cursor-pointer">
                 Download CV
               </a>
-
-              <HoverIconSwap icon={PiReadCvLogo} />
+              <RollOver>
+                <PiReadCvLogo />
+              </RollOver>
             </motion.div>
           </nav>
         </div>

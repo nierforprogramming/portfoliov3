@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { links, socials } from "../constants";
 import FadeUp from "./FadeUp";
 import { RiArrowRightLongLine } from "react-icons/ri";
-import HoverIconSwap from "./HoverIconSwap";
+import RollOver from "./RollOver";
 
 const Footer = () => {
   return (
@@ -27,7 +27,9 @@ const Footer = () => {
             className="rounded-full flex gap-1 items-center h-10 cursor-pointer bg-neutral-1000 px-6 py-2 text-sm font-medium text-neutral-0"
           >
             Reach Out
-            <HoverIconSwap icon={RiArrowRightLongLine} />
+            <RollOver>
+              <RiArrowRightLongLine />
+            </RollOver>
           </motion.button>
         </div>
 

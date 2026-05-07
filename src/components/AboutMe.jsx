@@ -13,9 +13,12 @@ const AboutMe = () => {
       </FadeUp>
 
       <div className="space-y-8 flex flex-col lg:flex-row-reverse md:gap-8">
-        <div className="aspect-video flex-1 lg:max-w-xl overflow-hidden rounded-md border-2 border-neutral-1000  object-cover">
+        <FadeUp
+          delay={0.5}
+          className="aspect-video flex-1 lg:max-w-xl overflow-hidden rounded-md border-2 border-neutral-1000  object-cover"
+        >
           <img src={myImage} alt="Me" className="object-cover h-full w-full" />
-        </div>
+        </FadeUp>
         <div className="flex-1">
           <TextReveal
             text={` I’m a Frontend developer with 5 years of hands-on experience

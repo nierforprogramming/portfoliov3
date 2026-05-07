@@ -1,6 +1,14 @@
+import { RiArrowRightLongLine } from "react-icons/ri";
+
+import { motion } from "motion/react";
+
+import RollOver from "./RollOver";
+
 const WorkCard = ({ work }) => {
   return (
-    <a
+    <motion.a
+      initial="initial"
+      whileHover="hover"
       href={work.url}
       target="_blank"
       className="
@@ -58,15 +66,15 @@ const WorkCard = ({ work }) => {
         </div>
 
         <div className="flex items-center gap-2 shrink-0">
-          <span
+          <RollOver
             className="
-              text-[10px]
-              sm:text-xs
-              md:text-sm
-            "
-          >
-            {work.year}
-          </span>
+      text-[10px]
+      sm:text-xs
+      md:text-sm
+    "
+            top={<span>{work.year}</span>}
+            bottom={<RiArrowRightLongLine />}
+          />
         </div>
       </div>
 
@@ -83,7 +91,7 @@ const WorkCard = ({ work }) => {
             h-auto"
         />
       </div>
-    </a>
+    </motion.a>
   );
 };
 

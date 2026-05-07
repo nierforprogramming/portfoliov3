@@ -3,6 +3,9 @@ import { works } from "../constants";
 import SectionHeading from "./SectionHeading";
 import WorkCard from "./WorkCard";
 import FadeUp from "./FadeUp";
+import { GoChevronDown } from "react-icons/go";
+import { motion } from "motion/react";
+import RollOver from "./RollOver";
 
 const Work = () => {
   const [displayCount, setDisplayCount] = useState(6);
@@ -26,12 +29,17 @@ const Work = () => {
       </div>
       {hasMoreWorks && (
         <div className="flex justify-center">
-          <button
+          <motion.button
+            initial="initial"
+            whileHover="hover"
             onClick={handleShowMore}
-            className="rounded-full h-10 cursor-pointer bg-neutral-0 px-6 py-2 text-sm font-medium text-neutral-1000"
+            className="rounded-full h-10 flex gap-1 items-center cursor-pointer bg-neutral-0 px-6 py-2 text-sm font-medium text-neutral-1000"
           >
             Show More
-          </button>
+            <RollOver>
+              <GoChevronDown />
+            </RollOver>
+          </motion.button>
         </div>
       )}
     </section>
