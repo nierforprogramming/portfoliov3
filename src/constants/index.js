@@ -10,6 +10,7 @@ import nfBlogImage from "../assets/nfblog.png";
 import picolleryImage from "../assets/picollery.png";
 import soSunnyImage from "../assets/sosunny.png";
 import fixBugsImage from "../assets/fixbugs.png";
+import packgoImage from "../assets/packgo.png";
 
 import { RiGithubLine, RiLinkedinLine, RiTwitterXLine } from "react-icons/ri";
 import { SiBun } from "react-icons/si";
@@ -103,6 +104,14 @@ export const works = [
     year: "2025",
     url: "https://mindwavebyniraj.netlify.app/",
     image: mindwaveImage,
+  },
+
+  {
+    name: "PackGo",
+    category: "Item Tracking App",
+    year: "2025",
+    url: "https://packgofromtheweb.netlify.app/",
+    image: packgoImage,
   },
   {
     name: "NFN News",
