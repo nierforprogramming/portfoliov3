@@ -620,7 +620,7 @@ export const experience = [
 export const socials = [
   {
     name: "X",
-    url: "https://www.x.com",
+    url: "https://x.com/itismeniraj",
     icon: RiTwitterXLine,
   },
 
